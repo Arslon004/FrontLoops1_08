@@ -1,0 +1,152 @@
+html{
+  box-sizing: border-box;
+}
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #f8ebe9;
+}
+.cf::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrapper{
+  position: relative;
+  width: 1000px;
+  margin: 30px auto 0;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  box-shadow: 0 35px 25px -15px rgba(0, 0, 0, .2);
+}
+.back-link{
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 35px 0 0 30px;
+  padding-left: 20px;
+  opacity: 0.7 ;
+  color: #627a99;
+}
+.back-link::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0; top: 0;
+  width: 15px;height: 15px;
+  background: url(../images/arrow-back.svg) no-repeat center;
+  background-size: contain;
+}
+img{
+  max-width: 100%;
+}
+.main_section{
+  float: right;
+  width: 640px;
+  background-color: #fff;
+  padding: 40px 30px 110px 100px;
+}
+ul{
+  position: absolute;
+ list-style-type: none;
+ top: 10px;right: 30px;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+li>a{
+  color: #999;
+  text-transform: uppercase;
+  font-size: .7rem;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: .3s ease all;
+}
+li>a:nth-child(2){
+  color: #000;
+}
+li>a:hover{
+  color: #000;
+}
+.section_words .section_title{
+font-size: 4rem;
+font-weight: 100;
+margin-bottom: 0;
+margin-top: 130px;
+}
+.section_words .section_title::after{
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 4px;
+  bottom: 10px;
+  right: -20px;
+  background-color: #333;
+}
+.section_text{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-weight: 100;
+  font-size: .8rem;
+  padding: 20px 0;
+  color:#000;
+}
+.section_text span{
+  font-weight: bold;
+  font-size: .9rem;
+}
+.left_side{
+  position: relative;
+  float: left;
+}
+.left_side .picture_one{
+  width: 177px;
+}
+.video_title{
+  position: relative;
+font-weight: bold;
+font-size: 1.1rem;
+}
+.video_title_forward{
+  position: absolute;
+  right: -30px;
+}
+.left_side p{
+  margin: 0;
+}
+.video{
+  position: relative;
+}
+.play_pictures{
+  position: absolute;
+  top: 50%;left: 50%;
+  padding: 10px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #e2e7e7;
+}
+.right_side{
+  float: right;
+  width: 270px;
+}
+.right_side p{
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.arrow_back{
+  position: absolute;
+  top: 25px;left: 20px;
+}
+.back_link_box a{
+vertical-align: middle;
+}
